@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+</head>
+<body>
+<div ng-app="hrApp">
+    <div ng-controller="ImageController">
+        <div ng-controller="CartController">
+            <li ng-repeat="image in imageList"><img ng-src={{image.url}} ng-mouseover="showPrice(image.index)" ng-mouseleave="notShowPrice(image.index)"
+            ng-click="addToCart(image.label, image.price)">
+                <div ng-show="image.showPrice">
+                    {{image.price}}
+                </div>
+                <br>
+                {{image.label}}
+                </br>
+                <br></br>
+            </li>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../scripts/app.js"></script>
+<script type="text/javascript" src="../scripts/ImageController.js"></script>
+<script type="text/javascript" src="../scripts/CartController.js"></script>
+
+
+</body>
+</html>

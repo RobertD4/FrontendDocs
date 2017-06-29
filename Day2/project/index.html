@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR APP</title>
+    <link rel="stylesheet" type ="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type ="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+
+</head>
+<body>
+<div ng-app="hrApp">
+    <div ng-controller="MainController"></div>
+        <div ng-include="'views/employees.html'"></div>
+
+</div>
+<h1>HR Application</h1>
+
+
+<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="scripts/hrApp.js"></script>
+<script type="text/javascript" src="scripts/MainController.js"></script>
+<script type="text/javascript" src="scripts/EmployeesController.js"></script>
+
+
+</body>
+</html>
